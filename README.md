@@ -6,10 +6,9 @@ This tool is intended for the use of clinicians trained and experienced in the c
 This tool is based on the [Neonatal Early-Onset Sepsis Calculator](https://neonatalsepsiscalculator.kaiserpermanente.org/) by Kaiser Permanente. If you find any deviations in results please submit a pull request.
 # Screenshots
 
-![Alt text](/Screenshots/iphone55_eos_mainscreen.png?raw=true "Calculator")
+<img src="./Screenshots/iphone55_eos_mainscreen.png?raw=true" width="400"><br>
 
-![Alt text](/Screenshots/iphone55_eos_calculated.png?raw=true "Calculated Results")
-
+<img src="./Screenshots/iphone55_eos_calculated.png?raw=true" width="400">
 
 # References
 1. Puopolo KM, Draper D, Wi S, Newman TB, Zupancic J, Lieberman E, Smith M, Escobar GJ. Estimating the probability of neonatal early-onset infection on the basis of maternal risk factors. Pediatrics 2011;128:e1155-63.
