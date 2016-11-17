@@ -15,6 +15,7 @@ This tool is based on the [Neonatal Early-Onset Sepsis Calculator](https://neona
 2. Escobar GJ, Puopolo KM, Wi S, Turk BJ, Kuzniewicz MW, Walsh EM, Newman TB, Zupancic J, Lieberman E, Draper D. Stratification of risk of early-onset sepsis in newborns > 34 weeks' gestation. Pediatrics 2014;133:30-6. 2011;128:e1155-63.
 3. Kuzniewicz MW, Walsh EM, Li S, Fischer A, Escobar GJ. Development and Implementation of an Early-Onset Sepsis Calculator to Guide Antibiotic Management in Late Preterm and Term Neonates. Jt Comm J Qual Patient Saf. 2016 May;42(5):232-9.
 4. https://neonatalsepsiscalculator.kaiserpermanente.org/ 
+
 # Installation Instructions
 1. clone/download the repo
 2. pod install
