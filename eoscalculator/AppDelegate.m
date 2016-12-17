@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "EOSCalc.h"
 #import "EOSCalculatorViewController.h"
 #import "UIColor+EOSColors.h"
 
@@ -20,31 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    float p = 0;
-    p = [EOSCalc EOSProbabilityWith:EOSIncidence3in10000 age:35 temp:96.5 rom:10 abs:EOSABXTypeBroadGreater4Hours gbs:EOSGBSNegative];
-    
-    float pWell = [EOSCalc EOSProbability:p afterExam:EOSExamClassificationWellAppearing];
-    float pEquivocal = [EOSCalc EOSProbability:p afterExam:EOSExamClassificationEquivocal];
-    float pClinicalIll = [EOSCalc EOSProbability:p afterExam:EOSExamClassificationClinicalIllness];
-    
-    
-    NSLog(@"The probability with age 35 weeks, temp of 96.5 F and ROM of 10 is: %.2f \n well: %.2f\n equivocal: %.2f\n clinically-ill: %.2f", p, pWell, pEquivocal, pClinicalIll);
-    
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     EOSCalculatorViewController *calcViewController = [[EOSCalculatorViewController alloc] initNewForm];
-    
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:calcViewController];
-    
     self.window.rootViewController = nav;
-
     self.window.backgroundColor = [UIColor whiteColor];
-
     [self.window makeKeyAndVisible];
-    
     [self setupColors];
-
     return YES;
 }
 -(void)setupColors
@@ -60,9 +42,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]]; //button colors
     [[UINavigationBar appearance] setBarTintColor:[UIColor EOSBlue]]; //background color
     [[UINavigationBar appearance] setTranslucent:NO];
-    
-    //[[UILabel appearanceWhenContainedInInstancesOfClasses:@[[UITableViewCell class]]] setTintColor:[UIColor orangeColor]];
-    
+
 }
 
 
