@@ -14,6 +14,7 @@
 		AA158FD51DC786FC00F0108C /* eos_classification.html in Resources */ = {isa = PBXBuildFile; fileRef = AA158FD41DC786FC00F0108C /* eos_classification.html */; };
 		AA158FDD1DC78F6600F0108C /* pure_table.css in Resources */ = {isa = PBXBuildFile; fileRef = AA158FDC1DC78F6600F0108C /* pure_table.css */; };
 		AA158FE01DC7B5DF00F0108C /* UIColor+EOSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = AA158FDF1DC7B5DF00F0108C /* UIColor+EOSColors.m */; };
+		AA1E05791E05B390008D2A21 /* eos_test_cases_all.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1E05781E05B390008D2A21 /* eos_test_cases_all.json */; };
 		AA4EC8101DC2A21F0036F030 /* eoscalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC80F1DC2A21F0036F030 /* eoscalculatorTests.m */; };
 		AA4EC8181DC2A3F30036F030 /* eos_test_cases_3_in_10000.json in Resources */ = {isa = PBXBuildFile; fileRef = AA4EC8171DC2A3F30036F030 /* eos_test_cases_3_in_10000.json */; };
 		AA4EC81B1DC2B96C0036F030 /* SGBaseFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC81A1DC2B96C0036F030 /* SGBaseFormViewController.m */; };
@@ -53,6 +54,7 @@
 		AA158FDC1DC78F6600F0108C /* pure_table.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pure_table.css; sourceTree = "<group>"; };
 		AA158FDE1DC7B5DF00F0108C /* UIColor+EOSColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+EOSColors.h"; sourceTree = "<group>"; };
 		AA158FDF1DC7B5DF00F0108C /* UIColor+EOSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EOSColors.m"; sourceTree = "<group>"; };
+		AA1E05781E05B390008D2A21 /* eos_test_cases_all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eos_test_cases_all.json; sourceTree = "<group>"; };
 		AA4EC80D1DC2A21F0036F030 /* eoscalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eoscalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4EC80F1DC2A21F0036F030 /* eoscalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eoscalculatorTests.m; sourceTree = "<group>"; };
 		AA4EC8111DC2A21F0036F030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		AA4EC80E1DC2A21F0036F030 /* eoscalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				AA1E05781E05B390008D2A21 /* eos_test_cases_all.json */,
 				AA4EC80F1DC2A21F0036F030 /* eoscalculatorTests.m */,
 				AA4EC8111DC2A21F0036F030 /* Info.plist */,
 				AA4EC8171DC2A3F30036F030 /* eos_test_cases_3_in_10000.json */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA4EC8181DC2A3F30036F030 /* eos_test_cases_3_in_10000.json in Resources */,
+				AA1E05791E05B390008D2A21 /* eos_test_cases_all.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

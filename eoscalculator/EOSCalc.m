@@ -37,7 +37,7 @@ static float const ROM_CO = 1.2256;
         return -1;
     }
 }
-+(float)valueFromABSType:(EOSABXType)t{
++(float)valueFromABXType:(EOSABXType)t{
 
     if (t == EOSABXTypeBroadGreater4Hours) {
         return -1.1861;
@@ -68,18 +68,18 @@ static float const ROM_CO = 1.2256;
 }
 
 
-+(float)EOSRegressionSolutionWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abs:(EOSABXType)absType gbs:(EOSGBSStatus)gbs{
++(float)EOSRegressionSolutionWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abx:(EOSABXType)abxType gbs:(EOSGBSStatus)gbs{
     
     float transformedROM = [EOSCalc transformedROM:r];
     float ageSquared = powf(a, 2);
     float intercept = [EOSCalc interceptFromEOSIncidence:incidence];
     float gbsValue = [EOSCalc valueFromGBSStatus:gbs];
-    float absValue = [EOSCalc valueFromABSType:absType];
+    float abxValue = [EOSCalc valueFromABXType:abxType];
 
-    return intercept + TEMP_CO*t + AGE_CO*a + AGE_2_CO*ageSquared + ROM_CO*transformedROM + gbsValue + absValue;
+    return intercept + TEMP_CO*t + AGE_CO*a + AGE_2_CO*ageSquared + ROM_CO*transformedROM + gbsValue + abxValue;
 }
-+(float)EOSProbabilityWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abs:(EOSABXType)absType gbs:(EOSGBSStatus)gbs{
-    float regressionSol = [EOSCalc EOSRegressionSolutionWith:incidence age:a temp:t rom:r abs:absType gbs:gbs];
++(float)EOSProbabilityWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abx:(EOSABXType)abxType gbs:(EOSGBSStatus)gbs{
+    float regressionSol = [EOSCalc EOSRegressionSolutionWith:incidence age:a temp:t rom:r abx:abxType gbs:gbs];
     return 1000/(1+expf(-1*regressionSol));
 }
 +(float)probabilityModificationAfterExam:(EOSExamClassification)examClassification{

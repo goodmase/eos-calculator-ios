@@ -41,11 +41,11 @@ typedef enum : NSUInteger {
 
 
 @interface EOSCalc : NSObject
-+(float)EOSRegressionSolutionWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abs:(EOSABXType)absType gbs:(EOSGBSStatus)gbs;
-+(float)EOSProbabilityWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abs:(EOSABXType)absType gbs:(EOSGBSStatus)gbs;
++(float)EOSRegressionSolutionWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abx:(EOSABXType)abxType gbs:(EOSGBSStatus)gbs;
++(float)EOSProbabilityWith:(EOSIncidence)incidence age:(float)a temp:(float)t rom:(float)r abx:(EOSABXType)abxType gbs:(EOSGBSStatus)gbs;
 +(float)interceptFromEOSIncidence:(EOSIncidence)incidence;
 +(float)valueFromGBSStatus:(EOSGBSStatus)status;
-+(float)valueFromABSType:(EOSABXType)t;
++(float)valueFromABXType:(EOSABXType)t;
 
 +(float)probabilityModificationAfterExam:(EOSExamClassification)examClassification;
 +(float)EOSProbability:(float)p afterExam:(EOSExamClassification)examClassification;

@@ -38,7 +38,7 @@
     
     for (NSDictionary *testCase in testCases) {
         NSUInteger incidence = [testCase[@"incidence"] unsignedIntegerValue];
-        NSUInteger abx_type = [testCase[@"abx_type"] unsignedIntegerValue];
+        NSUInteger abxType = [testCase[@"abx_type"] unsignedIntegerValue];
         NSUInteger gbs_status = [testCase[@"gbs_status"] unsignedIntegerValue];
         float ageWeeks = [testCase[@"age_weeks"] floatValue];
         float ageDays = [testCase[@"age_days"] floatValue];
@@ -51,7 +51,7 @@
         float eosRiskEquivocalActual = [testCase[@"eos_risk_equivocal"] floatValue];
         float eosRiskClinicalIllnessActual = [testCase[@"eos_risk_clinical_illness"] floatValue];
         
-        float eosRisk = [EOSCalc EOSProbabilityWith:incidence age:age temp:tF rom:rom abs:abx_type gbs:gbs_status];
+        float eosRisk = [EOSCalc EOSProbabilityWith:incidence age:age temp:tF rom:rom abx:abxType gbs:gbs_status];
         float eosRiskRounded = round(eosRisk*100.0)/100.0f;
         float eosRiskWellAppearing = [EOSCalc EOSProbability:eosRiskRounded afterExam:EOSExamClassificationWellAppearing];
         float eosRiskEquivocal = [EOSCalc EOSProbability:eosRiskRounded afterExam:EOSExamClassificationEquivocal];
@@ -87,7 +87,7 @@
         float temp = [testCase[@"temp"] floatValue];
         float rom = [testCase[@"ROM"] floatValue];
         
-        float probability = [EOSCalc EOSProbabilityWith:EOSIncidence3in10000 age:age temp:temp rom:rom abs:3 gbs:0];
+        float probability = [EOSCalc EOSProbabilityWith:EOSIncidence3in10000 age:age temp:temp rom:rom abx:3 gbs:0];
         //only 2 decimal places given in online example so accuracy just needed to be within 0.005
         XCTAssertEqualWithAccuracy(probability, actual, EPSILON);
     }

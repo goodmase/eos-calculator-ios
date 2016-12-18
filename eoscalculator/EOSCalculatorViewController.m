@@ -189,7 +189,7 @@ static NSString *const kAntibioticsType = @"antibiotics_type";
                                           age:age
                                          temp:temp
                                           rom:rom
-                                          abs:abxOption
+                                          abx:abxOption
                                           gbs:gbsOption];
         
         EOSResultsViewController *resultsViewController = [[EOSResultsViewController alloc] initNewForm];
