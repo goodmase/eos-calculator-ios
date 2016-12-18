@@ -3,10 +3,6 @@ osx_image: xcode8.2
 xcode_workspace: eoscalculator.xcworkspace # path to your xcodeproj folder
 xcode_scheme: eoscalculatorTests
 
-before_install:
-- brew update
-- brew uninstall xctool
-- brew install xctool
-
 script:
+- xcodebuild -workspace eoscalculator.xcworkspace -scheme eoscalculatorTests build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 - xctool -workspace eoscalculator.xcworkspace -scheme eoscalculatorTests run-tests -test-sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
