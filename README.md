@@ -1,4 +1,4 @@
-# EOS Calculator iOS
+# EOS Calculator iOS [![Build Status](https://travis-ci.org/goodmase/eos-calculator-ios.svg?branch=master)](https://travis-ci.org/goodmase/eos-calculator-ios)
 Probability of Neonatal Early-Onset Sepsis Based on  Maternal Risk Factors and the Infant's Clinical Presentation
 
 This tool is intended for the use of clinicians trained and experienced in the care of newborn infants. Using this tool, the risk of early-onset sepsis can be calculated in an infant born > 34 weeks gestation. The interactive calculator produces the probability of early onset sepsis per 1000 babies by entering values for the specified maternal risk factors along with the infant's clinical presentation.
